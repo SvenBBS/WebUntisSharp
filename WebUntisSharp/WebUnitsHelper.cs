@@ -38,6 +38,9 @@ namespace mrousavy.APIs.WebUntisSharp {
 
         #region Publics
         public string SessionId;
+
+        public AuthenticationResult.Result SessionData { get; private set; }
+
         public bool SuppressErrors;
         public static Logger Logger = new Logger(Logger.LogLevel.Debug);
         #endregion
@@ -150,6 +153,8 @@ namespace mrousavy.APIs.WebUntisSharp {
 
             //Get Session ID
             SessionId = result.result.sessionId;
+            //all session information for further usage
+            SessionData = result.result;
 
             _loggedIn = true;
         }

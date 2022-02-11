@@ -45,11 +45,17 @@ namespace mrousavy.APIs.WebUntisSharp {
 
         //Base-Class for all Responses
         public class WebUntisResult {
-            public string id;
-            public object result;
+            public string id { get; set; }
+            public object result{ get; set; }
             public readonly string jsonrpc = "2.0";
 
             public Error error;
+        }
+
+        public class WebUntisArrayResult
+        {
+            public int id{ get; set; }
+            public int orgid{ get; set; }
         }
 
         //The general Error class
@@ -195,6 +201,8 @@ namespace mrousavy.APIs.WebUntisSharp {
                 public string foreColor;
                 public string backColor;
                 public int did;
+                public int teacher1;
+                public int teacher2;
             }
 
             //Result of GetClasses Query
@@ -393,34 +401,41 @@ namespace mrousavy.APIs.WebUntisSharp {
             }
 
             //Timetable Result
-            public class TimetableResult : WebUntisResult {
-                public new int id;
-                public long date;
-                public long startTime;
-                public long endTime;
+            public class TimetableResult : WebUntisResult
+            {
+                public new Timetable[] result { get; set; }
+            }
+
+            public class Timetable {
+                public int id{ get; set; }
+                public long date{ get; set; }
+                public long startTime{ get; set; }
+                public long endTime{ get; set; }
 
                 //array of classes ids
-                public int[] kl;
+                public WebUntisArrayResult[] kl{ get; set; }
                 //array of teacher ids
-                public int[] te;
+                public WebUntisArrayResult[] te{ get; set; }
                 //array of subject ids
-                public int[] su;
+                public WebUntisArrayResult[] su{ get; set; }
                 //array of room ids
-                public int[] ro;
+                public WebUntisArrayResult[] ro{ get; set; }
 
                 //ls (lesson) | oh (office hour) | sb (standby) | bs (break supervision) | ex (examination)
                 //omitted if lesson
-                public string lstype;
+                public string lstype{ get; set; }
 
                 // | cancelled | irregular
                 //omitted if empty
-                public string code;
+                public string code{ get; set; }
 
                 //text of the lesson, omitted if empty
-                public string lstext;
+                public string lstext{ get; set; }
 
                 //statistical flags of the lesson, omitted if empty
-                public string statflags;
+                public string statflags{ get; set; }
+
+                public string activityType{ get; set; }
             }
 
             //Response for Get Schoolyear

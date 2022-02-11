@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUntisTest", "WebUntisTes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebUntisSharp", "WebUntisSharp\WebUntisSharp.csproj", "{FB9FD982-CCDE-4134-A4D4-4AA6EEF5ED85}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebUntisSharpUnitTests", "WebUntisSharpUnitTests\WebUntisSharpUnitTests.csproj", "{BBBEFE33-68CC-4F82-9197-6A29BFE38A47}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpDocx", "..\SharpDocx\SharpDocx\SharpDocx.csproj", "{9A930475-385E-41AF-81EB-A18C4F235FE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{FB9FD982-CCDE-4134-A4D4-4AA6EEF5ED85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB9FD982-CCDE-4134-A4D4-4AA6EEF5ED85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB9FD982-CCDE-4134-A4D4-4AA6EEF5ED85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBBEFE33-68CC-4F82-9197-6A29BFE38A47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBBEFE33-68CC-4F82-9197-6A29BFE38A47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBBEFE33-68CC-4F82-9197-6A29BFE38A47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBBEFE33-68CC-4F82-9197-6A29BFE38A47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A930475-385E-41AF-81EB-A18C4F235FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A930475-385E-41AF-81EB-A18C4F235FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A930475-385E-41AF-81EB-A18C4F235FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A930475-385E-41AF-81EB-A18C4F235FE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
