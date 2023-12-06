@@ -43,7 +43,7 @@ namespace mrousavy.APIs.WebUntisSharp
             {'ò', "o"}, {'ó', "o"}, {'ô', "o"}, {'õ', "o"}, {'ö', "oe"}, {'ø', "oe"},
             {'ù', "u"}, {'ú', "u"}, {'û', "u"}, {'ü', "ue"},
             {'ý', "y"}, {'ÿ', "y"},
-            {' ', "."}
+            {' ', "."}, {'´', ""},{'\'', ""}
         };
 
         private static Dictionary<char, string> charmapEMail = new Dictionary<char, string>() {
